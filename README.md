@@ -139,7 +139,7 @@ modules/newfeature/
 
 ### 2. Add the config:
 
-```
+```lua
 -- modules/newfeature/config.lua
 ---@class MYRESOURCE.NewFeature
 local newfeature = {
