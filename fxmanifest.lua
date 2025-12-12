@@ -2,13 +2,11 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'Jestar'
-description 'Template for a modular resource'
+description 'Template for a modular resource with typed configs/functions'
 version '1.0.0'
 
 shared_scripts {
-    -- Uncomment this if you use ox_lib
-    -- '@ox_lib/init.lua',
-
+    '@ox_lib/init.lua',
     'config.lua',
     'modules/**/config.lua',
 }
@@ -28,5 +26,7 @@ server_scripts {
 files {
     'locales/*.json' -- optional, if you plan on using a locale system
 }
+
+dependency 'ox_lib'
 
 lua54 'yes'
